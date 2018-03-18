@@ -18,7 +18,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000"
+    android:background="#fffff"
     tools:context="demo.tensorflow.org.customvision_sample.CameraActivity" >
 
     <TextView
@@ -26,12 +26,12 @@
         android:layout_width="500dp"
         android:layout_height="80dp"
         android:layout_gravity="center_horizontal"
-        android:background="#955659"
+        android:background="#fffff"
         android:fontFamily="sans-serif-condensed"
         android:gravity="center"
-        android:text="\n CALORIZE IT!"
-        android:textColor="#ffffff"
-        android:textSize="29sp"
+        android:text="CALORIZE IT!"
+        android:textColor="#000"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
     <TextView

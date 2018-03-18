@@ -57,9 +57,11 @@ public interface Classifier {
       this.title = title;
       this.confidence = confidence;
       this.location = location;
-      calorieList.put("Apple", 100);
-      calorieList.put("apple juice", 50);
-      calorieList.put("Banana", 80);
+      calorieList.put("apple", 52);
+      calorieList.put("apple juice", 91);
+      calorieList.put("banana", 89);
+      calorieList.put("energy drink", 118);
+
       Integer caloriesInFood = calorieList.get(title);
       if (caloriesInFood == null) {
         this.calories = -1;
