@@ -22,15 +22,26 @@
     tools:context="demo.tensorflow.org.customvision_sample.CameraActivity" >
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView6"
+        android:layout_width="500dp"
+        android:layout_height="80dp"
         android:layout_gravity="center_horizontal"
         android:background="#955659"
         android:fontFamily="sans-serif-condensed"
-        android:layout_width="500dp"
-        android:layout_height="80dp"
-        android:text="\n CALORIZE IT!"
         android:gravity="center"
+        android:text="\n CALORIZE IT!"
         android:textColor="#ffffff"
         android:textSize="29sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_gravity="bottom"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        android:gravity="bottom"
+        android:visibility="visible" />
+
+
 </FrameLayout>
