@@ -9,9 +9,10 @@
 
     <application
         android:allowBackup="true"
-        android:label="@string/app_name"
+        android:label="Calorie Camera"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:icon="@drawable/logo">
 
         <activity android:name="demo.tensorflow.org.customvision_sample.ClassifierActivity"
             android:screenOrientation="portrait">

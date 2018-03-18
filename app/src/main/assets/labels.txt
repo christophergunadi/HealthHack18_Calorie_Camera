@@ -1,7 +1,19 @@
-Apple
-Banana
-Coconut
-Orange
-Passionfruit
-Pineapple
-Strawberry
+apple
+apple juice
+banana
+biscuit
+bolognese
+cabonara
+cake
+chocolate bar
+coffee
+crisps
+energy drink
+milk
+orange
+pasta
+pizza
+salad
+sandwich
+water
+wrap
