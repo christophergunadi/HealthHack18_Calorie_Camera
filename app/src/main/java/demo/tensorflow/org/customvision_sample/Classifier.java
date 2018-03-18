@@ -17,7 +17,10 @@ package demo.tensorflow.org.customvision_sample;
 
 import android.graphics.Bitmap;
 import android.graphics.RectF;
+
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Generic interface for interacting with different recognition engines.
@@ -37,6 +40,8 @@ public interface Classifier {
      * Display name for the recognition.
      */
     private final String title;
+    private int calories;
+    private Map<String, Integer> calorieList = new HashMap<>();
 
     /**
      * A sortable score for how good the recognition is relative to others. Higher should be better.
@@ -52,6 +57,19 @@ public interface Classifier {
       this.title = title;
       this.confidence = confidence;
       this.location = location;
+      calorieList.put("Apple", 100);
+      calorieList.put("apple juice", 50);
+      calorieList.put("Banana", 80);
+      Integer caloriesInFood = calorieList.get(title);
+      if (caloriesInFood == null) {
+        this.calories = -1;
+      } else {
+        this.calories = caloriesInFood;
+      }
+    }
+
+    public int getCalories() {
+      return calories;
     }
 
     public String getId() {

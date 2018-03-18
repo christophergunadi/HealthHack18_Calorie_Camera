@@ -57,8 +57,14 @@ public class RecognitionScoreView extends View implements ResultsView {
         if (results != null && results.size() > 0) {
             int y = (int) (fgPaint.getTextSize() * 1.4f);
             final Recognition recog = results.get(0);
-            final int x = (int)(canvas.getWidth() - fgPaint.measureText(recog.getTitle())) / 2;
-            canvas.drawText(recog.getTitle(), x, y, fgPaint);
+            String recogText;
+            if (recog.getCalories() == -1) {
+                recogText = recog.getTitle();
+            } else {
+                recogText = recog.getTitle() + " - " + recog.getCalories() + " calories";
+            }
+            final int x = (int)(canvas.getWidth() - fgPaint.measureText(recogText) / 2);
+            canvas.drawText(recogText, x, y, fgPaint);
         }
     }
 }
